@@ -1,9 +1,9 @@
 <?php
 
 define("SERVER" , "localhost");
-define("USER" , "n7aakash");
-define("PASSWORD" , "1234@abcd");
-define("DB" , "airline");
+define("USER" , "yogita");
+define("PASSWORD" , "yogita@123");
+define("DB" , "assetmanagement");
 define("BASE_SERVER","localhost");
 
 ?>
