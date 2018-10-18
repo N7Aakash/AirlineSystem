@@ -224,33 +224,33 @@
 
            
             
-           <form action="" method="POST" role="form">
+           <form action="scripts/add.php" method="POST" role="form">
           <legend>Add Flights</legend>
 
     <div class="form-group">
         <label for="">Source</label>
-        <input type="text" class="form-control" id="" placeholder="Input field">
+        <input type="text" name="flight_source" class="form-control" id="flight_source_id" placeholder="Input field">
     </div>
     <div class="form-group">
         <label for="">Destination</label>
-        <input type="text" class="form-control" id="" placeholder="Input field">
+        <input type="text" name="flight_destination" class="form-control" id="flight_destination_id" placeholder="Input field">
     </div>
     <div class="form-group">
         <label for="">Duration</label>
-        <input type="text" class="form-control" id="" placeholder="Input field">
+        <input type="text" name="flight_duration" class="form-control" id="flight_duration_id" placeholder="Input field">
     </div>
     <div class="form-group">
         <label for="">Arrival Time</label>
-        <input type="text" class="form-control" id="" placeholder="Input field">
+        <input type="text" name="flight_arrival" class="form-control" id="flight_arrival_id" placeholder="Input field">
     </div>
     <div class="form-group">
         <label for="">Capacity</label>
-        <input type="text" class="form-control" id="" placeholder="Input field">
+        <input type="text" name="flight_capacity" class="form-control" id="flight_capacity_id" placeholder="Input field">
     </div>
 
 
 
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" name="add_flight" class="btn btn-primary">Submit</button>
 </form>
 
 

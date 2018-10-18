@@ -28,14 +28,14 @@ function insert($tableName, $columns, $values){
 }
 
 
-function deleteRecord($tableName,$primaryKeyColumnName,$primaryKeyValue,$employeeID)
-{
-    global $connection;
-    $query = "update $tableName set deleted = 1, deleted_by = $employeeID, deleted_at = now() where $primaryKeyColumnName = $primaryKeyValue";
-    $resultset = mysqli_query($connection , $query);
-    checkQueryResult($resultset);
-    
-}
+//function deleteRecord($tableName,$primaryKeyColumnName,$primaryKeyValue,$employeeID)
+//{
+//    global $connection;
+//    $query = "update $tableName set deleted = 1, deleted_by = $employeeID, deleted_at = now() where $primaryKeyColumnName = $primaryKeyValue";
+//    $resultset = mysqli_query($connection , $query);
+//    checkQueryResult($resultset);
+//    
+//}
 
 function redirect($url){
     header("Location: $url");

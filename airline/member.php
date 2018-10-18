@@ -228,8 +228,9 @@
                                             <tr>
                                                <th> Member id</th>
                                                 <th> Username </th>
-                                                <th> Password </th>
-                                                
+                                                <th> Email </th>
+                                                <th> User Number </th> 
+                                                <th> Delete </th>                                               
                                             </tr>
                                         </thead>
 
