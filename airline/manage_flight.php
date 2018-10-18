@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>MAnage Flights Page</title>
+    <title>Mnage Flights Page</title>
     <meta name="description" content="Student">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,8 +21,8 @@
     <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
     <!-- <link rel="stylesheet" href="assets/css/bootstrap-select.less"> -->
     <link rel="stylesheet" href="assets/scss/style.css">
-    <link rel="stylesheet" href="assets/global/plugins/datatables/datatables.min.css">
-    <link rel="stylesheet" href="assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css">
+    <link rel="stylesheet" href="assets/global/plugins/datatables/datatables.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css" type="text/css">
     <link href="assets/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
@@ -223,7 +223,7 @@
         <div class="content mt-3">
 
             
-        <table class="table table-striped table-hover table-bordered" id="student_list">
+        <table class="table table-striped table-hover table-bordered" id="flight_list">
                                         <thead>
                                             <tr>
                                                <th> Flight ID</th>
@@ -249,21 +249,41 @@
 
     <!-- Right Panel -->
 
+<!--
     <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
     
-    <script src="assets/global/scripts/datatable.js"></script> 
-    <script src="assets/global/plugins/datatables/datatables.min.js"></script>
+    
+    
+    <script src="assets/global/scripts/datatable.js" type="text/javascript"></script> 
+    <script src="assets/global/plugins/datatables/datatables.min.js" type="text/javascript"></script> 
     <script src="assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js"></script>
     <script src="assets/js/lib/chart-js/Chart.bundle.js"></script>
     <script src="assets/js/dashboard.js"></script>
-    <script src="assets/js/widgets.js"></script>
-    <script src="assets/js/lib/vector-map/jquery.vmap.js"></script>
-    <script src="assets/js/lib/vector-map/jquery.vmap.min.js"></script>
-    <script src="assets/js/lib/vector-map/jquery.vmap.sampledata.js"></script>
-    <script src="assets/js/lib/vector-map/country/jquery.vmap.world.js"></script>
+-->
+   <!-- BEGIN CORE PLUGINS -->
+         <script src="assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+         <script src="assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+         <script src="assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+         <script src="assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+         <script src="assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+         <script src="assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+         <script src="assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+         <script src="assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+         <!-- END CORE PLUGINS -->
+         <!-- BEGIN PAGE LEVEL PLUGINS -->
+         <script src="assets/global/plugins/bootstrap-toastr/toastr.min.js"></script>
+         <script src="assets/global/plugins/counterup/jquery.waypoints.min.js" type="text/javascript"></script>
+         <script src="assets/global/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
+
+         <script src="assets/global/scripts/datatable.js" type="text/javascript"></script>
+         <script src="assets/global/plugins/datatables/datatables.min.js" type="text/javascript"></script>
+         <script src="assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" type="text/javascript"></script>
+         <!-- END PAGE LEVEL PLUGINS -->
+    
+    <script src="assets/pages/scripts/manage-flight.js" type="text/javascript"></script>
 
 
 
