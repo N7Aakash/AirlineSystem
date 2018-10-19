@@ -1,108 +1,27 @@
-<?php
-$employee_id = $_SESSION['employee_id'];
-$employee_name = getLoggedInEmployeeName($employee_id);
+ <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.php">SKYLINE AIRWAYS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
 
-?>
-
-
-<div class="page-header navbar navbar-fixed-top">
-<div class="page-header-inner ">
-                <!-- BEGIN LOGO -->
-                <div class="page-logo">
-                    <a href="index.html">
-                        <img src="../assets/layouts/layout/img/logo.png" alt="logo" class="logo-default" /> </a>
-                    <div class="menu-toggler sidebar-toggler"> </div>
-                </div>
-                <!-- END LOGO -->
-                <!-- BEGIN RESPONSIVE MENU TOGGLER -->
-                <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"> </a>
-                <!-- END RESPONSIVE MENU TOGGLER -->
-                <!-- BEGIN TOP NAVIGATION MENU -->
-                <div class="top-menu">
-                    <ul class="nav navbar-nav pull-right">
-                        <!-- BEGIN NOTIFICATION DROPDOWN -->
-                        <li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
-                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                <i class="fa fa-exclamation-triangle"></i>
-                                <span class="badge badge-default"> 7 </span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="external">
-                                    <h3>
-                                        <span class="bold">12 Products</span> under EOQ</h3>
-                                    <a href="#">view all</a>
-                                </li>
-                                <li>
-                                    <ul class="dropdown-menu-list scroller" style="height: 250px;" data-handle-color="#637283">
-                                        <li>
-                                            <a href="javascript:;">
-                                                <span class="time">3 Left</span>
-                                                <span class="details">
-                                                    <span class="label label-sm label-icon label-danger">
-                                                        <i class="fa fa-bell-o"></i>
-                                                    </span> RAM </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <span class="time">1 Left</span>
-                                                <span class="details">
-                                                    <span class="label label-sm label-icon label-danger">
-                                                        <i class="fa fa-bell-o"></i>
-                                                    </span> Mouse </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <span class="time">0 Left</span>
-                                                <span class="details">
-                                                    <span class="label label-sm label-icon label-danger">
-                                                        <i class="fa fa-bell-o"></i>
-                                                    </span> Keyboard </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <span class="time">2 Left</span>
-                                                <span class="details">
-                                                    <span class="label label-sm label-icon label-danger">
-                                                        <i class="fa fa-bell-o"></i>
-                                                    </span> Monitor </span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- END NOTIFICATION DROPDOWN -->
-
-                        <!-- BEGIN USER LOGIN DROPDOWN -->
-                        <li class="dropdown dropdown-user">
-                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                <img alt="" class="img-circle" src="../assets/layouts/layout/users/<?php echo $_SESSION['employee_id'].'.jpg'  ?>" />
-                                <span class="username username-hide-on-mobile"> <?php echo $employee_name; ?> </span>
-                                <i class="fa fa-angle-down"></i>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-default">
-                                <li>
-                                    <a href="#">
-                                        <i class="icon-user"></i> My Profile </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-cog"></i>Settings </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="icon-key"></i> Log Out </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- END USER LOGIN DROPDOWN -->
-
-                    </ul>
-                </div>
-                <!-- END TOP NAVIGATION MENU -->
-            </div>
-            <!-- END HEADER INNER -->
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="index.php" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="deals.php" class="nav-link">Deals</a></li>
+            <li class="nav-item"><a href="details.php" class="nav-link">Details</a></li>
+            <li class="nav-item"><a href="destination.php" class="nav-link">Destination</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="login.html"><input type="submit" class="search-submit btn btn-primary "style= "margin-top: 30px; padding: 5px; margin-left: 10px; margin-top: 30px;" value="Sign up"></a></li>
+            <li><a href="login.html"><input type="submit" class="search-submit btn btn-primary" style= "margin-top: 30px; padding: 5px; margin-left: 10px; margin-top: 30px;" value="Login "></a></li>
+            
+            
+<!--
+         <input type="submit" class="search-submit btn btn-primary" value="Find Flights">
+         <input type="submit" class="search-submit btn btn-primary" value="Find Flights">
+-->
+          </ul>
         </div>
+      </div>
+    </nav>
+    <!-- END nav -->

@@ -31,13 +31,14 @@ if(isset($_POST['submit'])){
     {
         $_SESSION['user_id']= $user_id;
 //        header("location: ../index.php");
-        echo "<br>hello you are logged in and being checked if fully registered!";
+//        echo "<br>hello you are logged in and being checked if fully registered!";
         
         //checking the full verification of the user !
         $user_verified=$row['is_verified'];
-        echo '<br>'.$user_verified;
+//        echo '<br>'.$user_verified;
         if($user_verified==1){
-            echo "<br> welcome to the website";
+//            echo "<br> welcome to the website";
+            header("location: ../index.php");
         }
         else{
 //            echo "thank you for registering. Please verify your email by clicking on the link we have sent you!";

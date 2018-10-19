@@ -64,20 +64,22 @@ try {
             <h4>Hello,</h4>
             <h3>Your SkylineAirways Account is Ready.</h3>
             <br>  
-            <a style='text-decoration:none; color:#fff; background-color:#348eda;border:solid #348eda; border-width:2px 10px; line-height:2;font-weight:bold; text-align:center; display:inline-block;border-radius:4px' href=localhost/AirlineSystem/airline/scripts/mail_verify/verify.php?q='.$user_id.'>
+            <a style='text-decoration:none; color:#fff; background-color:#348eda;border:solid #348eda; border-width:2px 10px; line-height:2;font-weight:bold; text-align:center; display:inline-block;border-radius:4px' href=localhost/AirlineSystem/airline/scripts/mail_verify/verified.php?q=$user_id >
             Activate your account </a>
             <br>  
             <h3>Thank you for Registering.</h3>
             <br>
             <br>
             <h4>Sincerely,</h4>
-            <h5>The Recruitment Team.</h5>
+            <h5>The Skyline Team.</h5>
             </div>";
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
     echo 'Message has been sent';
+    header("Location: ../mail_verify/verify.php");
 } catch (Exception $e) {
     echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
 }
+    
 }

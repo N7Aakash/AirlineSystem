@@ -77,7 +77,7 @@
                             <button type="submit" name="register" class="btn btn-primary btn-flat m-b-30 m-t-30">Register</button>
 
                             <div class="register-link m-t-15 text-center">
-                                <p>Already have account ? <a href="#">Login in</a></p>
+                                <p>Already have account ? <a href="login.php">Login in</a></p>
                             </div>
                         </div>
                     </form>
